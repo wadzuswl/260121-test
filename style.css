@@ -1,0 +1,114 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: "Pretendard", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  font-size: 20px;
+}
+
+.student-status-container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.tab-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tab-menu .tab-btn {
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: 600;
+  background: rgb(195, 255, 198);
+  border: 1px solid gray;
+  color: #111;
+}
+
+.tab-menu .tab-btn:hover {
+  background: rgb(40, 219, 40);
+  color: #fff;
+
+}
+
+/* 탭버튼 클릭했을 때 */
+.tab-menu .tab-btn.active {
+  background: rgb(40, 219, 40);
+  color: #fff;
+}
+
+.card-count {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.student-status-show-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+/* 학생 카드 */
+.student-card {
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 10px;
+  padding: 20px 30px;
+  background: #edffe0;
+  transition: 0.3s;
+}
+
+.student-card:hover {
+  background: #d6fcb9;
+}
+
+.student-id {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.student-name {
+  font-weight: 700;
+}
+
+.student-class-name {
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.student-status {
+  font-size: 16px;
+  border: 1px solid #222;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.student-status.attend {
+  background: lightblue;
+}
+
+.student-status.absent {
+  background: tomato;
+}
+
+.student-status.late {
+  background: lightgoldenrodyellow;
+}
